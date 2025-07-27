@@ -49,15 +49,23 @@ sudo systemctl start postgresql
 sudo systemctl enable postgresql
 ```
 Open DBeaver and create a new connection:
+
 Driver: PostgreSQL
+
 Host: localhost or 127.0.0.1
+
 Port: 5432
+
 Database: postgres (default database for initial connection)
+
 Username: postgres
+
 Password: Set to your_secure_password
 
 In DBeaver:Connect to the PostgreSQL server.
+
 Create the jumia_data database:Right-click on the connection, select Create > Database.
+
 Name: jumia_data.
 
 Set the postgres user password:
