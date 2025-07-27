@@ -44,7 +44,7 @@ with DAG(
     description='Scraping first page of Jumia website',
     start_date=datetime(2024, 8, 30),
     schedule_interval='@daily',
-    catchup=False
+    catchup=False # Set to False to avoid running past dates
 ) as dag:
 
     task1 = SQLExecuteQueryOperator(
